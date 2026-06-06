@@ -1,3 +1,41 @@
+# Автоматизированное тестирование Todo App
+
+Проект представляет собой набор автотестов для Angular-приложения "Todo List".
+
+## Технологии
+
+- **Python 3.11**
+- **Playwright** — для автоматизации браузера
+- **pytest + pytest-asyncio** — фреймворк тестирования
+- **Page Object Pattern** — архитектурный подход
+- **Allure** — генерация красивых отчётов
+
+## Особенности проекта
+
+- Стабильная работа с асинхронным API (JSONPlaceholder)
+- Мокирование запросов (обход проблем с 500 ошибками сервера)
+- Автоматическое создание тестовых данных
+- Скриншоты при падении тестов
+- Allure-отчёты с подробной визуализацией
+
+## Структура проекта
+todoapptests/                  # Корень проекта
+├── docs/                      # Документация
+│   ├── BUG_REPORTS.md
+│   └── TEST_CASES.md
+├── tests/                     # Все автотесты
+│   ├── pages/                 # Page Objects
+│   ├── test_edge_cases.py
+│   └── test_todo_functionality.py
+├── reports/                   # Отчёты (будет создаваться автоматически)
+│   ├── allure-report/
+│   └── allure-results/
+├── .gitignore
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+└── README.md
+
 ## Список реализованных тестов
 1. Покрыты CRUD операции (Create, Read, Update, Delete)
 2. Учтены edge-cases JSONPlaceholder (успешные “фейковые” PUT/DELETE)
