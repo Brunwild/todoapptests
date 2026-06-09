@@ -19,6 +19,8 @@
 - Allure-отчёты с подробной визуализацией
 
 ## Структура проекта
+
+```plaintext
 todoapptests/                  # Корень проекта
 ├── docs/                      # Документация
 │   ├── BUG_REPORTS.md
@@ -35,6 +37,7 @@ todoapptests/                  # Корень проекта
 ├── pytest.ini
 ├── requirements.txt
 └── README.md
+```
 
 ## Список реализованных тестов
 1. Покрыты CRUD операции (Create, Read, Update, Delete)
